@@ -17,7 +17,7 @@ CREATE TABLE customers (
 #drop table if exists geolocation;
 CREATE TABLE geolocation 
 ( 
-	geolocation_zip_code_prefix INT,
+    geolocation_zip_code_prefix INT,
     geolocation_lat DOUBLE,
     geolocation_lng DOUBLE,
     geolocation_city TEXT,
@@ -58,7 +58,7 @@ CREATE TABLE payments (
 
 drop table if exists products;
 CREATE TABLE products (
-    product_id TEXT NULL,
+    product_id TEXT,
     product_category TEXT NULL,
     product_name_length int NULL,
     product_description_length int NULL,
@@ -71,7 +71,7 @@ CREATE TABLE products (
 
 #drop table if exists sellers;
 CREATE TABLE sellers (
-    seller_id TEXT NULL,
+    seller_id TEXT,
     seller_zip_code_prefix TEXT NULL,
     seller_city TEXT NULL,
     seller_state TEXT NULL
